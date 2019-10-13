@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "NODE_ENV=development nodemon index.js ",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "ava src/test/*/*.test.js"
     },
     "keywords": [],
     "author": "Michael H Wang",
@@ -15,6 +15,7 @@
         "express": "^4.17.1"
     },
     "devDependencies": {
+        "ava": "^2.4.0",
         "nodemon": "^1.19.3"
     }
 }
