@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var weatherServiceAlt = require('../../weather_services/alter_services/OpenWeatherMap');
 
-var MainService = require('../../Service');
+var MainService = require('../../service');
 var service = new MainService();
 
 router.get('/weather', async function (req, res) {
