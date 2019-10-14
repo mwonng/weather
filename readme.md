@@ -1,5 +1,6 @@
 # Weather
 
+visit https://weather.wonng.com/v1/weather?city=melbourne for testing
 ## GOAL
 
 Create an HTTP Service that reports on Melbourne weather. This service will source its information from either of the below providers:
