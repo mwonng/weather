@@ -16,7 +16,6 @@ class OpenWeatherService extends Weather {
         const result = {}
         result.wind_speed = response.wind.speed;
         result.temperature_degrees = response.main.temp;
-        result.source = "open";
         return result;
     }
 }

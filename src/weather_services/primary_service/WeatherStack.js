@@ -21,7 +21,6 @@ class WeatherStackService extends Weather {
         let result = {};
         result.wind_speed = this.kmhToMeterperhour(response.current.wind_speed);
         result.temperature_degrees = response.current.temperature;
-        result.source = "stack";
         return result;
     }
 }
