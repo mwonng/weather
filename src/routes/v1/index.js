@@ -27,13 +27,4 @@ router.get('/weather', async function (req, res) {
 
 });
 
-router.get('/open', async function (req, res) {
-    try {
-        const result = await weatherServiceAlt.getByCelsius();
-        res.send(result);
-    } catch (error) {
-        res.send(error);
-    }
-});
-
 module.exports = router

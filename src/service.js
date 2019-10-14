@@ -36,7 +36,7 @@ class MainService {
         try {
             let res = await this.getFromPrimaryProvider(city);
             if (res === 'error') {
-                res = this.getFromAlternativeProviders(city);
+                res = await this.getFromAlternativeProviders(city);
             }
             return res
         } catch (e) {
