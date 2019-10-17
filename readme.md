@@ -40,6 +40,8 @@ Calling the service via `curl ​http://localhost:8080/v1/weather?city=melboune`
 
 * during get a response from putting a request (usually 30-100ms), if there is another request incoming. Do we need to handling as new request or using cache?
 * multiple providers possibility, we can actually have more than one alternative provide
+* in memory cache can also be a redis or other cache server service for caching latest weather
+* need prefetch automatically for optimise repsonse.
 
 ## Install & requirement
 please run this app using node and version >= 12.5.0
